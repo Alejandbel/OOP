@@ -20,3 +20,7 @@
 ## Автор
 
 Богданов Александр 153502
+
+## Диаграмма классов
+
+![Technical Diagrams (1)](https://user-images.githubusercontent.com/90352952/222985215-9403016d-cdb4-487f-a8f0-ecba803c13a5.jpg)

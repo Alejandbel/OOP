@@ -24,3 +24,40 @@
 ## Диаграмма классов
 
 ![Technical Diagrams (1)](https://user-images.githubusercontent.com/90352952/222985215-9403016d-cdb4-487f-a8f0-ecba803c13a5.jpg)
+
+## Описание моделей данных
+
+### Book
+
+```
+id: int
+title: varchar
+author: varchar
+genre: varchar
+amount: int
+depositPrice: decimal
+rentPrice: decimal
+createdAt: date
+```
+
+### Reader
+
+```
+id: int
+firstname: varchar
+lastname: varchar
+address: varchar
+phoneNumber: varchar
+createdAt: date
+```
+
+### Reservation
+
+```
+id: int
+bookId: int
+readerId: int
+expectedReturnDate: date
+returnedAt: date
+createdAt: date
+```

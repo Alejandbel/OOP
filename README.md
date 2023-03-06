@@ -25,6 +25,24 @@
 
 ![Technical Diagrams (1)](https://user-images.githubusercontent.com/90352952/222985215-9403016d-cdb4-487f-a8f0-ecba803c13a5.jpg)
 
+## Описание функциональности приложение
+
+### Юзкейсы пользователя
+
+1. Просмотреть список книг
+2. Взять книгу
+3. Вернуть книгу
+4. Зарегестрировать аккаунт
+5. Войти в аккаунт
+6. Просмотреть аккаунт
+7. Удалить аккаунт
+
+### Юзкейсы администратора
+
+1. CRUD книг
+2. Просмотреть доход библиотеки
+3. Просмотреть историю бронирования книг
+
 ## Описание моделей данных
 
 ### Book
@@ -37,7 +55,7 @@ genre: varchar
 amount: int
 depositPrice: decimal
 rentPrice: decimal
-createdAt: date
+createdAt: date default CURRENT_TIMESTAMP
 ```
 
 ### Reader
@@ -47,8 +65,9 @@ id: int
 firstname: varchar
 lastname: varchar
 address: varchar
+availableMoney: decimal default 0
 phoneNumber: varchar
-createdAt: date
+createdAt: date default CURRENT_TIMESTAMP
 ```
 
 ### Reservation
@@ -59,5 +78,5 @@ bookId: int
 readerId: int
 expectedReturnDate: date
 returnedAt: date
-createdAt: date
+createdAt: date default CURRENT_TIMESTAMP
 ```
